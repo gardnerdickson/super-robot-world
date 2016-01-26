@@ -1,0 +1,7 @@
+*.suo
+RobotGame/bin/*
+RobotGame/obj/*
+RobotGameContent/bin/*
+RobotGameContent/obj/*
+*.cachefile
+*.user
