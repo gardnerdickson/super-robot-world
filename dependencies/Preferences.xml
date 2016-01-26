@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preferences>
+  <showPrefsWindowOnStartup>True</showPrefsWindowOnStartup>
+  <backBufferWidth>1280</backBufferWidth>
+  <backBufferHeight>720</backBufferHeight>
+  <fullScreen>False</fullScreen>
+  <inputDevice>Controller</inputDevice>
+</preferences>
