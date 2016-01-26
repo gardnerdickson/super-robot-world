@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="400" height="60" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="demo_tilesheet" tilewidth="32" tileheight="32">
+  <image source="demo_tilesheet.png" trans="ff00ff" width="64" height="32"/>
+ </tileset>
+ <layer name="Foreground" width="400" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt28EOwiAQRdHG//9o9yTEBl+VYc5J7goWumEaqdcFAAAAAAAAAAAAAAAAAAAAAAAAAAAAwIleQwAAAAAAAABwGnfjAAAAAAAAAHTgfhwAAAAAAACADtyPAwAAAAAAANCB+3EAAAAAeI7f3ABYYX4AsML8AGCF+QHACvMDgBXmB8A94//9ftmOdv1cANXsfNY/4anvWm2OAnyr2xlnfgBkdDvjzA+AjG5nnPkBkNHtjDM/AD7757tXu56b5gcAANzn2RYAAAAAAABgv/cx0+sVm0ntl6QTGqXXKzaT2i9JJzRKr1dsJrVfkk5olF6v2ExqvyQlegPGVAzx
+  </data>
+ </layer>
+ <layer name="Background" width="400" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/gCFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8A3cPAAE=
+  </data>
+ </layer>
+ <layer name="Destructible" width="400" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/gCFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8A3cPAAE=
+  </data>
+ </layer>
+ <objectgroup color="#0000ff" name="Objects" width="400" height="60">
+  <object name="player_spawn" type="PlayerSpawn" x="1952" y="1632"/>
+  <object name="grenadier_1" type="EnemySpawn" x="5216" y="1024">
+   <properties>
+    <property name="Difficulty" value="Hard"/>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="WaypointList" value="g1_w2,g1_w1"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="g1_w1" type="EnemySpawn" x="5152" y="1056">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="g1_w2" type="EnemySpawn" x="5280" y="1056">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="grenadier_2" type="EnemySpawn" x="5216" y="1504">
+   <properties>
+    <property name="Difficulty" value="Normal"/>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="WaypointList" value="g2_w2,g2_w1"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="g2_w2" type="EnemySpawn" x="5344" y="1536">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="g2_w1" type="EnemySpawn" x="5088" y="1536">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="powerup_ammo" type="PowerupSpawn" x="4768" y="1728">
+   <properties>
+    <property name="ObjectType" value="Ammo"/>
+   </properties>
+  </object>
+  <object name="powerup_grenade" type="PowerupSpawn" x="4576" y="1728">
+   <properties>
+    <property name="ObjectType" value="Health"/>
+   </properties>
+  </object>
+  <object name="powerup_life" type="PowerupSpawn" x="4640" y="1728">
+   <properties>
+    <property name="ObjectType" value="Life"/>
+   </properties>
+  </object>
+  <object name="powerup_homing_missile" type="PowerupSpawn" x="4704" y="1728">
+   <properties>
+    <property name="ObjectType" value="HomingMissile"/>
+   </properties>
+  </object>
+  <object name="powerup_jetpack" type="PowerupSpawn" x="4512" y="1728">
+   <properties>
+    <property name="ObjectType" value="Jetpack"/>
+   </properties>
+  </object>
+  <object name="powerup_jetpack" type="PowerupSpawn" x="4352" y="1056">
+   <properties>
+    <property name="ObjectType" value="Jetpack"/>
+   </properties>
+  </object>
+  <object name="powerup_jetpack" type="PowerupSpawn" x="4352" y="608">
+   <properties>
+    <property name="ObjectType" value="Jetpack"/>
+   </properties>
+  </object>
+  <object name="powerup_jetpack" type="PowerupSpawn" x="4352" y="192">
+   <properties>
+    <property name="ObjectType" value="Jetpack"/>
+   </properties>
+  </object>
+  <object name="fan_1" type="EnvironmentActor" x="4192" y="1600">
+   <properties>
+    <property name="PositionCorrectionMode" value="Down"/>
+    <property name="SpriteKey" value="Fan"/>
+   </properties>
+  </object>
+  <object name="invincible_turret" type="EnemySpawn" x="4800" y="1312">
+   <properties>
+    <property name="EnemyOrientation" value="Up"/>
+    <property name="FireDelay" value="500"/>
+    <property name="FireDuration" value="1000"/>
+    <property name="Invincible" value="true"/>
+    <property name="ObjectType" value="TrackingTurret"/>
+    <property name="PositionCorrectionMode" value="Down"/>
+    <property name="Speed" value="0"/>
+    <property name="TurretBodySprite" value="StationaryTurretInvincibleUp"/>
+    <property name="TurretNozzleSprite" value="TurretInvincibleLaserNozzle"/>
+   </properties>
+  </object>
+  <object name="hard_pawn_1" type="EnemySpawn" x="7200" y="1664">
+   <properties>
+    <property name="InitialDirectionX" value="-1"/>
+    <property name="ObjectType" value="HardPawn"/>
+   </properties>
+  </object>
+  <object name="mover_1" type="MoverSpawn" x="5152" y="1664">
+   <properties>
+    <property name="Acceleration" value="0.5"/>
+    <property name="MaxVelocity" value="4"/>
+    <property name="MoverSpriteKey" value="Level1Mover"/>
+    <property name="ObjectType" value="BasicMover"/>
+    <property name="StopTime" value="1000"/>
+    <property name="WaypointIterator" value="Circular"/>
+    <property name="WaypointList" value="m1_w1,m1_w2"/>
+    <property name="WaypointOrientation" value="TwoDimensional"/>
+   </properties>
+  </object>
+  <object name="m1_w1" type="MoverSpawn" x="5152" y="1760">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="m1_w2" type="MoverSpawn" x="5152" y="1280">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="core_shield_1" type="EnemySpawn" x="2464" y="1120">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="0.785"/>
+    <property name="RotationArmLength" value="175"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="0.025"/>
+   </properties>
+  </object>
+  <object name="core_shield_2" type="EnemySpawn" x="2464" y="1152">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="1.57"/>
+    <property name="RotationArmLength" value="175"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="0.025"/>
+   </properties>
+  </object>
+  <object name="core_shield_3" type="EnemySpawn" x="2464" y="1184">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="2.355"/>
+    <property name="RotationArmLength" value="175"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="0.025"/>
+   </properties>
+  </object>
+  <object name="core_shield_4" type="EnemySpawn" x="2464" y="1216">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="3.14"/>
+    <property name="RotationArmLength" value="175"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="0.025"/>
+   </properties>
+  </object>
+  <object name="core_shield_5" type="EnemySpawn" x="2464" y="1248">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="3.925"/>
+    <property name="RotationArmLength" value="175"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="0.025"/>
+   </properties>
+  </object>
+  <object name="core_shield_6" type="EnemySpawn" x="2464" y="1280">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="4.71"/>
+    <property name="RotationArmLength" value="175"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="0.025"/>
+   </properties>
+  </object>
+  <object name="core_shield_7" type="EnemySpawn" x="2464" y="1313">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="5.495"/>
+    <property name="RotationArmLength" value="175"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="0.025"/>
+   </properties>
+  </object>
+  <object name="core_shield_8" type="EnemySpawn" x="2464" y="1347">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="6.28"/>
+    <property name="RotationArmLength" value="175"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="0.025"/>
+   </properties>
+  </object>
+  <object name="core_shield_13" type="EnemySpawn" x="2592" y="1248">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="3.925"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.02"/>
+   </properties>
+  </object>
+  <object name="core_shield_16" type="EnemySpawn" x="2592" y="1347">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="6.28"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.02"/>
+   </properties>
+  </object>
+  <object name="core_shield_14" type="EnemySpawn" x="2592" y="1280">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="4.71"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.02"/>
+   </properties>
+  </object>
+  <object name="core_shield_9" type="EnemySpawn" x="2592" y="1120">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="0.785"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.020"/>
+   </properties>
+  </object>
+  <object name="core_shield_15" type="EnemySpawn" x="2592" y="1313">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="5.495"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.02"/>
+   </properties>
+  </object>
+  <object name="core_shield_10" type="EnemySpawn" x="2592" y="1152">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="1.57"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.02"/>
+   </properties>
+  </object>
+  <object name="core_shield_11" type="EnemySpawn" x="2592" y="1184">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="2.355"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.020"/>
+   </properties>
+  </object>
+  <object name="core_shield_12" type="EnemySpawn" x="2592" y="1216">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="3.14"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.02"/>
+   </properties>
+  </object>
+  <object name="core_shield_17" type="EnemySpawn" x="2625" y="1120">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="0.3925"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.020"/>
+   </properties>
+  </object>
+  <object name="core_shield_22" type="EnemySpawn" x="2625" y="1280">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="4.3175"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.02"/>
+   </properties>
+  </object>
+  <object name="core_shield_19" type="EnemySpawn" x="2625" y="1184">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="1.9625"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.020"/>
+   </properties>
+  </object>
+  <object name="core_shield_18" type="EnemySpawn" x="2625" y="1152">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="1.1775"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.02"/>
+   </properties>
+  </object>
+  <object name="core_shield_20" type="EnemySpawn" x="2625" y="1216">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="2.7475"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.02"/>
+   </properties>
+  </object>
+  <object name="core_shield_23" type="EnemySpawn" x="2625" y="1313">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="5.1025"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.02"/>
+   </properties>
+  </object>
+  <object name="core_shield_21" type="EnemySpawn" x="2625" y="1248">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="3.5325"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.02"/>
+   </properties>
+  </object>
+  <object name="core_shield_24" type="EnemySpawn" x="2625" y="1347">
+   <properties>
+    <property name="ObjectType" value="CoreShield"/>
+    <property name="Rotation" value="5.8875"/>
+    <property name="RotationArmLength" value="260"/>
+    <property name="RotationArmPositionX" value="80"/>
+    <property name="RotationArmPositionY" value="45"/>
+    <property name="RotationIncrement" value="-0.02"/>
+   </properties>
+  </object>
+  <object name="core" type="EnemySpawn" x="2560" y="1440">
+   <properties>
+    <property name="ObjectType" value="Core"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff0000" name="Volumes" width="400" height="60">
+  <object name="level_end" type="LevelEnd" x="12736" y="992" width="32" height="800"/>
+  <object name="enemy_spawn" type="EnemySpawn" x="4512" y="992" width="32" height="384">
+   <properties>
+    <property name="EnemySpawnList" value="grenadier_1,grenadier_2,invincible_turret"/>
+   </properties>
+  </object>
+  <object name="death_volume_1" type="Death" x="4128" y="1600" width="128" height="32"/>
+  <object name="force_up_1" type="Force" x="4128" y="1408" width="128" height="192">
+   <properties>
+    <property name="ForceX" value="0"/>
+    <property name="ForceY" value="-282"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn" type="EnemySpawn" x="5504" y="1536" width="32" height="256">
+   <properties>
+    <property name="EnemySpawnList" value="hard_pawn_1"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_core_shield" type="EnemySpawn" x="1984" y="864" width="32" height="928">
+   <properties>
+    <property name="EnemySpawnList" value="core"/>
+    <property name="Temp" value=",core_shield_1,core_shield_2,core_shield_3,core_shield_4,core_shield_5,core_shield_6,core_shield_7,core_shield_8,core_shield_9,core_shield_10,core_shield_11,core_shield_12,core_shield_13,core_shield_14,core_shield_15,core_shield_16,core_shield_17,core_shield_18,core_shield_19,core_shield_20,core_shield_21,core_shield_22,core_shield_23,core_shield_24"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffff00" name="CameraBounds" width="400" height="60" visible="0">
+  <object name="camera_bounds" x="32" y="-4448" width="12736" height="6368">
+   <properties>
+    <property name="OffsetPriority" value="1"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Collision" width="400" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt20ESRDAQBVDuf+nZm2GItKT1e1W9igqyyFeaZQEAAAAAAAAAAAAAAAAAAAAAAAAAAADgjdZNAQAAAAAAAMDb6I0DAAAAAAAAUIH+OAAAAAAAAAAV6I8DAAAAAAAAUIH+OAAAAADE8c4NgBbyA4AW8gOAFvIDgBbyA4AW8gPgnO3/fk/WjGa9LoBsZt7rI0Tda7YcBbir2h4XmR9Png9gNPkRO2+ltQVqkR+x81ZaW6AW+RE7b6W1Bd5j5LdXs+6b+ucAAHCeZ1sAAAAAAACA+b7H7D2esfb0Ol4ppXrUSL/Ov3Ycz+jo+q/eb/a1ANjzL9Pujmd0Ne9nfj4AiCI/vskPIIsP4ZICSw==
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="388" height="182" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="level_2_tiles" tilewidth="32" tileheight="32">
+  <image source="level_2_tiles.png" width="256" height="416"/>
+ </tileset>
+ <tileset firstgid="105" name="level_1_tiles" tilewidth="32" tileheight="32">
+  <image source="level_1_tiles.png" width="256" height="288"/>
+ </tileset>
+ <layer name="Background" width="388" height="182">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Foreground" width="388" height="182">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Collision" width="388" height="182" opacity="0.45">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Destructible" width="388" height="182">
+  <data encoding="base64" compression="zlib">
+   eJztzjEOgCAQRFEuBUbh/udyGjsssKHwveQX20y2FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAb3oa6UzX5F71tvPcu/cAAAAAAAAAAAAAAFbV1NKx+xEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgJ+6ARpsBh8=
+  </data>
+ </layer>
+ <objectgroup color="#ffff00" name="CameraBounds" width="388" height="182">
+  <object name="camera_bounds_2" x="32" y="544" width="4032" height="2208"/>
+  <object name="camera_bounds_1" x="32" y="32" width="1760" height="576">
+   <properties>
+    <property name="Transition" value="true"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_3" x="32" y="2656" width="4032" height="1024">
+   <properties>
+    <property name="Transition" value="true"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_4" x="32" y="3584" width="6688" height="960"/>
+  <object name="camera_bounds_5" x="5280" y="3392" width="2720" height="1152"/>
+  <object name="camera_bounds_6" x="7424" y="3136" width="1632" height="320">
+   <properties>
+    <property name="Transition" value="true"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_7" x="8000" y="3840" width="256" height="512">
+   <properties>
+    <property name="OffsetPriority" value="0"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="100"/>
+    <property name="Transition" value="true"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_8" x="7008" y="3392" width="3424" height="2208"/>
+  <object name="camera_bounds_9" x="9792" y="3552" width="2624" height="800">
+   <properties>
+    <property name="OffsetPriority" value="1"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="-265"/>
+    <property name="Transition" value="true"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_10" x="10880" y="0" width="1536" height="2368">
+   <properties>
+    <property name="OffsetPriority" value="0"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="-244"/>
+    <property name="Transition" value="true"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_11" x="10880" y="2272" width="1536" height="2080">
+   <properties>
+    <property name="OffsetPriority" value="0"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="-244"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_11" x="8960" y="0" width="2240" height="1088">
+   <properties>
+    <property name="OffsetPriority" value="0"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="-250"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" name="Objects" width="388" height="182">
+  <object name="player_spawn" type="PlayerSpawn" x="352" y="672"/>
+  <object name="powerup_life_1" type="PowerupSpawn" x="1152" y="448">
+   <properties>
+    <property name="ObjectType" value="Life"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+   </properties>
+  </object>
+  <object name="m1_w1" type="MoverSpawn" x="832" y="2640">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="m1_w2" type="MoverSpawn" x="3328" y="2640">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="mover_1" type="MoverSpawn" x="832" y="2688">
+   <properties>
+    <property name="Acceleration" value="0.5"/>
+    <property name="MaxVelocity" value="4"/>
+    <property name="MoverSpriteKey" value="Level2Mover"/>
+    <property name="ObjectType" value="SuspendedMover"/>
+    <property name="StopTime" value="1000"/>
+    <property name="WaypointIterator" value="ForwardAndBackward"/>
+    <property name="WaypointList" value="m1_w1,m1_w2,m1_w3,m1_w4,m1_w5,m1_w6"/>
+    <property name="WaypointOrientation" value="TwoDimensional"/>
+   </properties>
+  </object>
+  <object name="crawler_1" type="EnemySpawn" x="2656" y="2240">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBullet"/>
+    <property name="EnemyOrientation" value="Down"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Up"/>
+    <property name="Speed" value="2"/>
+    <property name="WaypointList" value="c1_w1,c1_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="crawler_2" type="EnemySpawn" x="3136" y="2240">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBullet"/>
+    <property name="EnemyOrientation" value="Down"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Up"/>
+    <property name="Speed" value="2"/>
+    <property name="WaypointList" value="c1_w1,c1_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="crawler_3" type="EnemySpawn" x="3584" y="2240">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBullet"/>
+    <property name="EnemyOrientation" value="Down"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Up"/>
+    <property name="Speed" value="2"/>
+    <property name="WaypointList" value="c1_w1,c1_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="c1_w1" type="EnemySpawn" x="736" y="2240">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="c1_w2" type="EnemySpawn" x="3616" y="2240">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="m1_w3" type="MoverSpawn" x="3328" y="3568">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="m1_w4" type="MoverSpawn" x="1088" y="3568">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="grenadier_1" type="EnemySpawn" x="2688" y="3232">
+   <properties>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="WaypointList" value="g1_w1,g1_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="g1_w2" type="EnemySpawn" x="2784" y="3264">
+   <properties>
+    <property name="ObjectType" value="Grenadier"/>
+   </properties>
+  </object>
+  <object name="g1_w1" type="EnemySpawn" x="2592" y="3264">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="g2_w1" type="EnemySpawn" x="2144" y="3264">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="grenadier_2" type="EnemySpawn" x="2048" y="3232">
+   <properties>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+    <property name="PowerupType" value="Ammo"/>
+    <property name="WaypointList" value="g2_w1,g2_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="g2_w2" type="EnemySpawn" x="1952" y="3264">
+   <properties>
+    <property name="ObjectType" value="Grenadier"/>
+   </properties>
+  </object>
+  <object name="g3_w1" type="EnemySpawn" x="1312" y="3264">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="grenadier_3" type="EnemySpawn" x="1408" y="3232">
+   <properties>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="WaypointList" value="g3_w1,g3_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="g3_w2" type="EnemySpawn" x="1504" y="3264">
+   <properties>
+    <property name="ObjectType" value="Grenadier"/>
+   </properties>
+  </object>
+  <object name="m1_w5" type="MoverSpawn" x="1088" y="4048">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="m1_w6" type="MoverSpawn" x="3328" y="4048">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="aerial_pawn_1" type="EnemySpawn" x="2752" y="3712">
+   <properties>
+    <property name="InitialDirectionX" value="-1"/>
+    <property name="ObjectType" value="AerialPawn"/>
+   </properties>
+  </object>
+  <object name="aerial_pawn_2" type="EnemySpawn" x="3072" y="3712">
+   <properties>
+    <property name="InitialDirectionX" value="-1"/>
+    <property name="ObjectType" value="AerialPawn"/>
+   </properties>
+  </object>
+  <object name="aerial_pawn_3" type="EnemySpawn" x="3360" y="3712">
+   <properties>
+    <property name="InitialDirectionX" value="-1"/>
+    <property name="ObjectType" value="AerialPawn"/>
+   </properties>
+  </object>
+  <object name="crawler_4" type="EnemySpawn" x="5472" y="3968">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBomb"/>
+    <property name="EnemyOrientation" value="Down"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Up"/>
+    <property name="Speed" value="2"/>
+    <property name="WaypointList" value="c4_w1,c4_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="crawler_5" type="EnemySpawn" x="5792" y="3968">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBomb"/>
+    <property name="EnemyOrientation" value="Down"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Up"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+    <property name="PowerupType" value="Health"/>
+    <property name="Speed" value="2"/>
+    <property name="WaypointList" value="c4_w1,c4_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="c4_w1" type="EnemySpawn" x="4160" y="3936">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="c4_w2" type="EnemySpawn" x="5920" y="3936">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="c6_w1" type="EnemySpawn" x="6112" y="3872">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="c6_w2" type="EnemySpawn" x="6112" y="3488">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="crawler_6" type="EnemySpawn" x="6144" y="3456">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBullet"/>
+    <property name="EnemyOrientation" value="Right"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Left"/>
+    <property name="Speed" value="2"/>
+    <property name="WaypointList" value="c6_w1,c6_w2"/>
+    <property name="WaypointOrientation" value="Vertical"/>
+   </properties>
+  </object>
+  <object name="easy_pawn_1" type="EnemySpawn" x="7744" y="3776">
+   <properties>
+    <property name="InitialDirectionX" value="-1"/>
+    <property name="ObjectType" value="EasyPawn"/>
+   </properties>
+  </object>
+  <object name="easy_pawn_2" type="EnemySpawn" x="7776" y="3776">
+   <properties>
+    <property name="InitialDirectionX" value="-1"/>
+    <property name="ObjectType" value="EasyPawn"/>
+    <property name="SpawnDelay" value="1250"/>
+   </properties>
+  </object>
+  <object name="health_powerup_1" type="PowerupSpawn" x="7536" y="3488">
+   <properties>
+    <property name="ObjectType" value="Health"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+   </properties>
+  </object>
+  <object name="powerup_life_2" type="PowerupSpawn" x="8544" y="3232">
+   <properties>
+    <property name="ObjectType" value="Life"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+   </properties>
+  </object>
+  <object name="powerup_life_3" type="PowerupSpawn" x="8800" y="5248">
+   <properties>
+    <property name="ObjectType" value="Ammo"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+   </properties>
+  </object>
+  <object name="powerup_health_2" type="PowerupSpawn" x="8736" y="5248">
+   <properties>
+    <property name="ObjectType" value="Health"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+   </properties>
+  </object>
+  <object name="powerup_ammo_1" type="PowerupSpawn" x="8864" y="5248">
+   <properties>
+    <property name="ObjectType" value="Health"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+   </properties>
+  </object>
+  <object name="grenadier_4" type="EnemySpawn" x="9024" y="4384">
+   <properties>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="WaypointList" value="g4_w1,g4_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="g4_w1" type="EnemySpawn" x="8960" y="4416">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="g4_w2" type="EnemySpawn" x="9088" y="4416">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="powerup_homing_missile_1" type="PowerupSpawn" x="9024" y="4256">
+   <properties>
+    <property name="ObjectType" value="HomingMissile"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+   </properties>
+  </object>
+  <object name="crawler_7" type="EnemySpawn" x="9600" y="3808">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBomb"/>
+    <property name="EnemyOrientation" value="Right"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Left"/>
+    <property name="WaypointList" value="c7_w2,c7_w1"/>
+    <property name="WaypointOrientation" value="Vertical"/>
+   </properties>
+  </object>
+  <object name="c7_w1" type="EnemySpawn" x="9568" y="3936">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="c7_w2" type="EnemySpawn" x="9568" y="3712">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="g5_w1" type="EnemySpawn" x="10432" y="3808">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="g5_w2" type="EnemySpawn" x="10560" y="3808">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="grenadier_5" type="EnemySpawn" x="10496" y="3776">
+   <properties>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+    <property name="PowerupType" value="Ammo"/>
+    <property name="WaypointList" value="g5_w1,g5_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="g6_w1" type="EnemySpawn" x="10432" y="4032">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="g6_w2" type="EnemySpawn" x="10560" y="4032">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="grenadier_6" type="EnemySpawn" x="10496" y="4000">
+   <properties>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="WaypointList" value="g6_w1,g6_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="crawler_9" type="EnemySpawn" x="11040" y="3712">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBullet"/>
+    <property name="EnemyOrientation" value="Down"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Up"/>
+    <property name="Speed" value="5"/>
+    <property name="WaypointList" value="c9_w1,c9_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="c9_w2" type="EnemySpawn" x="10784" y="3680">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="c9_w1" type="EnemySpawn" x="11136" y="3680">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="crawler_10" type="EnemySpawn" x="11744" y="2912">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBomb"/>
+    <property name="EnemyOrientation" value="Right"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Left"/>
+    <property name="Speed" value="4"/>
+    <property name="WaypointList" value="c10_w2,c10_w1"/>
+    <property name="WaypointOrientation" value="Vertical"/>
+   </properties>
+  </object>
+  <object name="c10_w1" type="EnemySpawn" x="11712" y="3072">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="c10_w2" type="EnemySpawn" x="11712" y="2752">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="crawler_11" type="EnemySpawn" x="11552" y="2912">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBomb"/>
+    <property name="EnemyOrientation" value="Left"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Right"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+    <property name="PowerupType" value="Health"/>
+    <property name="WaypointList" value="c11_w2,c11_w1"/>
+    <property name="WaypointOrientation" value="Vertical"/>
+   </properties>
+  </object>
+  <object name="c11_w1" type="EnemySpawn" x="11584" y="3072">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="c11_w2" type="EnemySpawn" x="11584" y="2752">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="crawler_12" type="EnemySpawn" x="11552" y="1856">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBullet"/>
+    <property name="EnemyOrientation" value="Right"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Left"/>
+    <property name="WaypointList" value="c12_w2,c12_w1"/>
+    <property name="WaypointOrientation" value="Vertical"/>
+   </properties>
+  </object>
+  <object name="c12_w1" type="EnemySpawn" x="11520" y="2016">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="c12_w2" type="EnemySpawn" x="11520" y="1728">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="c13_w2" type="EnemySpawn" x="12032" y="2048">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="crawler_13" type="EnemySpawn" x="11936" y="2080">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBullet"/>
+    <property name="EnemyOrientation" value="Down"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Up"/>
+    <property name="WaypointList" value="c13_w2,c13_w1"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="c13_w1" type="EnemySpawn" x="11808" y="2048">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="aerial_pawn_4" type="EnemySpawn" x="10912" y="1408">
+   <properties>
+    <property name="InitialDirectionX" value="1"/>
+    <property name="ObjectType" value="AerialPawn"/>
+   </properties>
+  </object>
+  <object name="aerial_pawn_6" type="EnemySpawn" x="10912" y="1216">
+   <properties>
+    <property name="InitialDirectionX" value="1"/>
+    <property name="ObjectType" value="AerialPawn"/>
+    <property name="SpawnDelay" value="4000"/>
+   </properties>
+  </object>
+  <object name="c14_w1" type="EnemySpawn" x="11520" y="736">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="c14_w2" type="EnemySpawn" x="11776" y="736">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="crawler_14" type="EnemySpawn" x="11648" y="768">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBomb"/>
+    <property name="EnemyOrientation" value="Down"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Up"/>
+    <property name="WaypointList" value="c14_w2,c14_w1"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="aerial_bomber_1" type="EnemySpawn" x="11808" y="160">
+   <properties>
+    <property name="ObjectType" value="AerialBomber"/>
+   </properties>
+  </object>
+  <object name="crawler_15" type="EnemySpawn" x="9984" y="448">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBomb"/>
+    <property name="EnemyOrientation" value="Right"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Left"/>
+    <property name="WaypointList" value="c15_w2,c15_w1"/>
+    <property name="WaypointOrientation" value="Vertical"/>
+   </properties>
+  </object>
+  <object name="c15_w1" type="EnemySpawn" x="9952" y="576">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="c15_w2" type="EnemySpawn" x="9952" y="352">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="crawler_16" type="EnemySpawn" x="9568" y="448">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBomb"/>
+    <property name="EnemyOrientation" value="Left"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Right"/>
+    <property name="WaypointList" value="c15_w2,c15_w1"/>
+    <property name="WaypointOrientation" value="Vertical"/>
+   </properties>
+  </object>
+  <object name="crawler_18" type="EnemySpawn" x="9728" y="448">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBullet"/>
+    <property name="EnemyOrientation" value="Right"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Left"/>
+    <property name="Speed" value="5"/>
+    <property name="WaypointList" value="c15_w2,c15_w1"/>
+    <property name="WaypointOrientation" value="Vertical"/>
+   </properties>
+  </object>
+  <object name="crawler_17" type="EnemySpawn" x="9824" y="448">
+   <properties>
+    <property name="CrawlerFireMode" value="TargetBullet"/>
+    <property name="EnemyOrientation" value="Left"/>
+    <property name="ObjectType" value="Crawler"/>
+    <property name="PositionCorrectionMode" value="Right"/>
+    <property name="Speed 4" value=""/>
+    <property name="WaypointList" value="c15_w2,c15_w1"/>
+    <property name="WaypointOrientation" value="Vertical"/>
+   </properties>
+  </object>
+  <object name="level_end_flag" type="EnvironmentActor" x="9056" y="704">
+   <properties>
+    <property name="PositionCorrectionMode" value="Down"/>
+    <property name="SpriteKey" value="LevelEndFlag"/>
+   </properties>
+  </object>
+  <object name="grenade_powerup_1" type="PowerupSpawn" x="608" y="288">
+   <properties>
+    <property name="ObjectType" value="Grenade"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+   </properties>
+  </object>
+  <object name="checkpoint_spawn_1" type="CheckpointSpawn" x="4448" y="4352"/>
+  <object name="checkpoint_spawn_2" type="CheckpointSpawn" x="9440" y="4576"/>
+ </objectgroup>
+ <objectgroup color="#ff0000" name="Volumes" width="388" height="182">
+  <object name="enemy_spawn" type="EnemySpawn" x="800" y="2208" width="32" height="416">
+   <properties>
+    <property name="EnemySpawnList" value="crawler_1,crawler_2,crawler_3,grenadier_1,grenadier_2,grenadier_3"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_2" type="EnemySpawn" x="1216" y="3616" width="32" height="576">
+   <properties>
+    <property name="EnemySpawnList" value="aerial_pawn_1,aerial_pawn_2,aerial_pawn_3"/>
+   </properties>
+  </object>
+  <object name="death_volume_1" type="Death" x="768" y="4672" width="2624" height="64"/>
+  <object name="death_volume_2" type="Death" x="4608" y="4672" width="1920" height="64"/>
+  <object name="enemy_spawn_3" type="EnemySpawn" x="4640" y="3904" width="32" height="672">
+   <properties>
+    <property name="EnemySpawnList" value="crawler_4,crawler_5"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_4" type="EnemySpawn" x="6080" y="3904" width="448" height="32">
+   <properties>
+    <property name="EnemySpawnList" value="crawler_6"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_5" type="EnemySpawn" x="6528" y="3552" width="32" height="288">
+   <properties>
+    <property name="EnemySpawnList" value="easy_pawn_1,easy_pawn_2"/>
+   </properties>
+  </object>
+  <object name="death_volume_3" type="Death" x="8000" y="5728" width="1792" height="64"/>
+  <object name="enemy_spawn_12" type="EnemySpawn" x="8064" y="4320" width="192" height="32">
+   <properties>
+    <property name="EnemySpawnList" value="grenadier_4"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_6" type="EnemySpawn" x="9568" y="3968" width="32" height="672">
+   <properties>
+    <property name="EnemySpawnList" value="crawler_7,crawler_9,grenadier_5,grenadier_6"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_7" type="EnemySpawn" x="11200" y="3488" width="736" height="32">
+   <properties>
+    <property name="EnemySpawnList" value="crawler_11,crawler_10"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_8" type="EnemySpawn" x="11200" y="2272" width="896" height="32">
+   <properties>
+    <property name="EnemySpawnList" value="crawler_12,crawler_13"/>
+   </properties>
+  </object>
+  <object name="death_volume_4" type="Death" x="10432" y="4480" width="128" height="64"/>
+  <object name="enemy_spawn_9" type="EnemySpawn" x="11200" y="1664" width="896" height="32">
+   <properties>
+    <property name="EnemySpawnList" value="aerial_pawn_4,aerial_pawn_6"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_10" type="EnemySpawn" x="11200" y="1248" width="896" height="32">
+   <properties>
+    <property name="EnemySpawnList" value="crawler_14"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_11" type="EnemySpawn" x="11200" y="672" width="896" height="32">
+   <properties>
+    <property name="EnemySpawnList" value="aerial_bomber_1,crawler_15,crawler_16,crawler_17,crawler_18"/>
+   </properties>
+  </object>
+  <object name="level_end" type="LevelEnd" x="8992" y="0" width="32" height="928"/>
+  <object name="checkpoint_1" type="Checkpoint" x="4512" y="3904" width="32" height="512">
+   <properties>
+    <property name="checkpoint_spawn" value="checkpoint_spawn_1"/>
+    <property name="priority" value="1"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_3_4_5_ref" type="EnemySpawn" x="8000" y="4288" width="256" height="32">
+   <properties>
+    <property name="EnemySpawnRef" value="enemy_spawn_3,enemy_spawn_4,enemy_spawn_5"/>
+   </properties>
+  </object>
+  <object name="checkpoint_2" type="Checkpoint" x="9504" y="3968" width="32" height="672">
+   <properties>
+    <property name="checkpoint_spawn" value="checkpoint_spawn_2"/>
+    <property name="priority" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

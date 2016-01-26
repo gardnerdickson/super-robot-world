@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="663" height="160" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="level_3_tiles" tilewidth="32" tileheight="32">
+  <image source="level_3_tiles.png" width="256" height="416"/>
+ </tileset>
+ <layer name="Foreground" width="663" height="160">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Background" width="663" height="160">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Collision" width="663" height="160" opacity="0.4">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Destructible" width="663" height="160">
+  <data encoding="base64" compression="zlib">
+   eJzt1jENAAAIwDDM4d8SDrhISKBVsHMRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdHI7AACAM7wlAABTvCUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACfFab1ANA=
+  </data>
+ </layer>
+ <objectgroup color="#ffff00" name="CameraBounds" width="663" height="160" opacity="0.42">
+  <object name="camera_bounds_1" x="32" y="2560" width="4416" height="1952">
+   <properties>
+    <property name="OffsetPriority" value="2"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="0"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_2" x="32" y="3840" width="800" height="1152">
+   <properties>
+    <property name="Transition" value="true"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_3" x="2560" y="2400" width="4640" height="992">
+   <properties>
+    <property name="OffsetPriority" value="1"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="-200"/>
+    <property name="Transition" value="true"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_4" x="6368" y="2400" width="3904" height="1600">
+   <properties>
+    <property name="OffsetPriority" value="2"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="0"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_5" x="9120" y="1920" width="2752" height="1568">
+   <properties>
+    <property name="OffsetPriority" value="3"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="-200"/>
+    <property name="Transition" value="true"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_6" x="10752" y="1947" width="6240" height="1792">
+   <properties>
+    <property name="OffsetPriority" value="4"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="0"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_7" x="15136" y="256" width="1856" height="3360">
+   <properties>
+    <property name="OffsetPriority" value="3"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="-150"/>
+    <property name="Transition" value="true"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_8" x="16448" y="32" width="3232" height="1344">
+   <properties>
+    <property name="OffsetPriority" value="2"/>
+    <property name="OffsetX" value="300"/>
+    <property name="OffsetY" value="-150"/>
+    <property name="Transition" value="true"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_9" x="18656" y="32" width="2528" height="1344">
+   <properties>
+    <property name="OffsetPriority" value="1"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="64"/>
+   </properties>
+  </object>
+  <object name="camera_bounds_3" x="3296" y="3392" width="1152" height="1120">
+   <properties>
+    <property name="OffsetPriority" value="1"/>
+    <property name="OffsetX" value="0"/>
+    <property name="OffsetY" value="-150"/>
+    <property name="Transition" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff0000" name="Volumes" width="663" height="160">
+  <object name="force_volume_1" type="Force" x="160" y="4352" width="512" height="768">
+   <properties>
+    <property name="ForceX" value="0"/>
+    <property name="ForceY" value="-250"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_1" type="EnemySpawn" x="1376" y="2976" width="32" height="1376">
+   <properties>
+    <property name="EnemySpawnList" value="hard_pawn_1"/>
+   </properties>
+  </object>
+  <object name="death_volume_1" type="Death" x="2304" y="4640" width="1088" height="96"/>
+  <object name="enemy_spawn_2" type="EnemySpawn" x="3328" y="3136" width="32" height="1088">
+   <properties>
+    <property name="EnemySpawnList" value="invincible_turret_1,invincible_turret_2"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_3" type="EnemySpawn" x="3360" y="3264" width="928" height="32">
+   <properties>
+    <property name="EnemySpawnList" value="wasp_1,grenadier_1,grenadier_2,grenadier_3"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_4" type="EnemySpawn" x="5952" y="1888" width="32" height="1376">
+   <properties>
+    <property name="EnemySpawnList" value="wasp_2,hard_pawn_2,invincible_turret_3,invincible_turret_4"/>
+   </properties>
+  </object>
+  <object name="death_volume_3" type="Death" x="7072" y="4128" width="4576" height="64"/>
+  <object name="enemy_spawn_5" type="EnemySpawn" x="10464" y="1920" width="32" height="1440">
+   <properties>
+    <property name="EnemySpawnList" value="wasp_3,wasp_4,wasp_5"/>
+   </properties>
+  </object>
+  <object name="damage_volume_1" type="Damage" x="13248" y="3488" width="160" height="32">
+   <properties>
+    <property name="Amount" value="50"/>
+   </properties>
+  </object>
+  <object name="force_volume_2" type="Force" x="13248" y="3136" width="160" height="352">
+   <properties>
+    <property name="ForceX" value="0"/>
+    <property name="ForceY" value="-250"/>
+   </properties>
+  </object>
+  <object name="death_volume_4" type="Death" x="11872" y="3840" width="5344" height="64"/>
+  <object name="enemy_spawn_6" type="EnemySpawn" x="14944" y="2400" width="32" height="960">
+   <properties>
+    <property name="EnemySpawnList" value="aerial_bomber_1,aerial_bomber_2,aerial_bomber_3,aerial_bomber_4,aerial_bomber_5,aerial_bomber_6"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_7" type="EnemySpawn" x="16448" y="256" width="32" height="960">
+   <properties>
+    <property name="EnemySpawnList" value="grenadier_4,grenadier_5,grenadier_6,invincible_turret_7"/>
+   </properties>
+  </object>
+  <object name="damage_volume_2" type="Damage" x="19904" y="1056" width="160" height="32">
+   <properties>
+    <property name="Amount" value="50"/>
+   </properties>
+  </object>
+  <object name="force_volume_3" type="Force" x="19904" y="800" width="160" height="256">
+   <properties>
+    <property name="ForceX" value="0"/>
+    <property name="ForceY" value="-250"/>
+   </properties>
+  </object>
+  <object name="level_end" type="LevelEnd" x="21024" y="32" width="32" height="384"/>
+  <object name="death_volume_2" type="Death" x="4384" y="3520" width="1344" height="64"/>
+  <object name="death_volume_5" type="Death" x="17120" y="1504" width="3520" height="64"/>
+  <object name="force_volume_3" type="Force" x="19904" y="608" width="160" height="64">
+   <properties>
+    <property name="ForceX" value="0"/>
+    <property name="ForceY" value="-250"/>
+   </properties>
+  </object>
+  <object name="enemy_spawn_51" type="EnemySpawn" x="11968" y="1920" width="32" height="1440">
+   <properties>
+    <property name="EnemySpawnList" value="invincible_turret_5,invincible_turret_6"/>
+   </properties>
+  </object>
+  <object name="checkpoint_2" type="Checkpoint" x="15264" y="1920" width="32" height="1440">
+   <properties>
+    <property name="checkpoint_spawn" value="checkpoint_spawn_2"/>
+    <property name="priority" value="2"/>
+   </properties>
+  </object>
+  <object name="checkpoint_enemy_spawn_2" type="EnemySpawn" x="15008" y="3328" width="64" height="32">
+   <properties>
+    <property name="EnemySpawnRef" value="enemy_spawn_6,enemy_spawn_51"/>
+   </properties>
+  </object>
+  <object name="checkpoint_enemy_spawn_1" type="EnemySpawn" x="7168" y="3232" width="64" height="32">
+   <properties>
+    <property name="EnemySpawnList" value="grenadier_3,invincible_turret_3,invincible_turret_4"/>
+   </properties>
+  </object>
+  <object name="checkpoint_1" type="Checkpoint" x="7136" y="3488" width="160" height="32">
+   <properties>
+    <property name="checkpoint_spawn" value="checkpoint_spawn_1"/>
+    <property name="priority" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" name="Objects" width="663" height="160">
+  <object name="hard_pawn_1" type="EnemySpawn" x="2240" y="4288">
+   <properties>
+    <property name="InitialDirectionX" value="-1"/>
+    <property name="ObjectType" value="HardPawn"/>
+   </properties>
+  </object>
+  <object name="invincible_turret_1" type="EnemySpawn" x="4256" y="3744">
+   <properties>
+    <property name="EnemyOrientation" value="Left"/>
+    <property name="FireDelay" value="750"/>
+    <property name="FireDuration" value="1000"/>
+    <property name="Invincible" value="true"/>
+    <property name="ObjectType" value="SimpleTurret"/>
+    <property name="PositionCorrectionMode" value="Right"/>
+    <property name="Speed" value="0"/>
+    <property name="TurretBodySprite" value="StationaryTurretInvincibleLeft"/>
+    <property name="TurretNozzleSprite" value="TurretInvincibleLaserNozzle"/>
+   </properties>
+  </object>
+  <object name="invincible_turret_2" type="EnemySpawn" x="4256" y="4064">
+   <properties>
+    <property name="EnemyOrientation" value="Left"/>
+    <property name="FireDelay" value="750"/>
+    <property name="FireDuration" value="1000"/>
+    <property name="Invincible" value="true"/>
+    <property name="ObjectType" value="SimpleTurret"/>
+    <property name="PositionCorrectionMode" value="Right"/>
+    <property name="Speed" value="0"/>
+    <property name="TurretBodySprite" value="StationaryTurretInvincibleLeft"/>
+    <property name="TurretNozzleSprite" value="TurretInvincibleLaserNozzle"/>
+   </properties>
+  </object>
+  <object name="wasp_1" type="EnemySpawn" x="2720" y="2880">
+   <properties>
+    <property name="ObjectType" value="Wasp"/>
+    <property name="SpawnDelay" value="500"/>
+   </properties>
+  </object>
+  <object name="grenadier_1" type="EnemySpawn" x="4896" y="2688">
+   <properties>
+    <property name="Difficulty" value="Hard"/>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+    <property name="PowerupType" value="Health"/>
+    <property name="WaypointList" value="g1_w1,g1_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="g1_w1" type="EnemySpawn" x="4864" y="2720">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="g1_w2" type="EnemySpawn" x="4928" y="2720">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="g2_w1" type="EnemySpawn" x="4832" y="3008">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="grenadier_2" type="EnemySpawn" x="4896" y="2976">
+   <properties>
+    <property name="Difficulty" value="Hard"/>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="WaypointList" value="g2_w1,g2_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="g2_w2" type="EnemySpawn" x="4960" y="3008">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="g3_w2" type="EnemySpawn" x="6512" y="2912">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="grenadier_3" type="EnemySpawn" x="6448" y="2880">
+   <properties>
+    <property name="Difficulty" value="Hard"/>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+    <property name="PowerupType" value="Ammo"/>
+    <property name="WaypointList" value="g3_w1,g3_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="g3_w1" type="EnemySpawn" x="6384" y="2912">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="wasp_2" type="EnemySpawn" x="6464" y="2304">
+   <properties>
+    <property name="ObjectType" value="Wasp"/>
+    <property name="SpawnDelay" value="5000"/>
+   </properties>
+  </object>
+  <object name="hard_pawn_2" type="EnemySpawn" x="7136" y="3200">
+   <properties>
+    <property name="InitialDirectionX" value="-1"/>
+    <property name="ObjectType" value="HardPawn"/>
+    <property name="SpawnDelay" value="500"/>
+   </properties>
+  </object>
+  <object name="mover_1" type="MoverSpawn" x="7248" y="3664">
+   <properties>
+    <property name="Acceleration" value="0.5"/>
+    <property name="MaxVelocity" value="3"/>
+    <property name="MoverSpriteKey" value="Level3Mover"/>
+    <property name="ObjectType" value="SuspendedMover"/>
+    <property name="StopTime" value="1000"/>
+    <property name="WaypointIterator" value="ForwardAndBackward"/>
+    <property name="WaypointList" value="m1_w1,m1_w2"/>
+    <property name="WaypointOrientation" value="TwoDimensional"/>
+   </properties>
+  </object>
+  <object name="m1_w1" type="MoverSpawn" x="7216" y="3632">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="m1_w2" type="MoverSpawn" x="9648" y="3632">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="invincible_turret_3" type="EnemySpawn" x="7184" y="3440">
+   <properties>
+    <property name="EnemyOrientation" value="Right"/>
+    <property name="FireDelay" value="1000"/>
+    <property name="FireDuration" value="1000"/>
+    <property name="Invincible" value="true"/>
+    <property name="ObjectType" value="SimpleTurret"/>
+    <property name="PositionCorrectionMode" value="Left"/>
+    <property name="Speed" value="0"/>
+    <property name="TurretBodySprite" value="StationaryTurretInvincibleRight"/>
+    <property name="TurretNozzleSprite" value="TurretInvincibleLaserNozzle"/>
+   </properties>
+  </object>
+  <object name="invincible_turret_4" type="EnemySpawn" x="10176" y="3424">
+   <properties>
+    <property name="EnemyOrientation" value="Left"/>
+    <property name="FireDelay" value="750"/>
+    <property name="FireDuration" value="1000"/>
+    <property name="Invincible" value="true"/>
+    <property name="ObjectType" value="SimpleTurret"/>
+    <property name="PositionCorrectionMode" value="Right"/>
+    <property name="Speed" value="0"/>
+    <property name="TurretBodySprite" value="StationaryTurretInvincibleLeft"/>
+    <property name="TurretNozzleSprite" value="TurretInvincibleLaserNozzle"/>
+   </properties>
+  </object>
+  <object name="wasp_3" type="EnemySpawn" x="10912" y="1856">
+   <properties>
+    <property name="ObjectType" value="Wasp"/>
+   </properties>
+  </object>
+  <object name="wasp_4" type="EnemySpawn" x="10944" y="1856">
+   <properties>
+    <property name="ObjectType" value="Wasp"/>
+    <property name="SpawnDelay" value="4000"/>
+   </properties>
+  </object>
+  <object name="wasp_5" type="EnemySpawn" x="10976" y="1856">
+   <properties>
+    <property name="ObjectType" value="Wasp"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+    <property name="PowerupType" value="Health"/>
+    <property name="SpawnDelay" value="8000"/>
+   </properties>
+  </object>
+  <object name="m2_w1" type="MoverSpawn" x="12128" y="3376">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="m2_w2" type="MoverSpawn" x="12928" y="3376">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="mover_2" type="MoverSpawn" x="12192" y="3424">
+   <properties>
+    <property name="Acceleration" value="0.5"/>
+    <property name="MaxVelocity" value="4"/>
+    <property name="MoverSpriteKey" value="Level3Mover"/>
+    <property name="ObjectType" value="SuspendedMover"/>
+    <property name="StopTime" value="1000"/>
+    <property name="WaypointIterator" value="ForwardAndBackward"/>
+    <property name="WaypointList" value="m2_w1,m2_w2"/>
+    <property name="WaypointOrientation" value="TwoDimensional"/>
+   </properties>
+  </object>
+  <object name="mover_3" type="MoverSpawn" x="13792" y="3424">
+   <properties>
+    <property name="Acceleration" value="0.5"/>
+    <property name="MaxVelocity" value="4"/>
+    <property name="MoverSpriteKey" value="Level3Mover"/>
+    <property name="ObjectType" value="SuspendedMover"/>
+    <property name="StopTime" value="1000"/>
+    <property name="WaypointIterator" value="ForwardAndBackward"/>
+    <property name="WaypointList" value="m3_w2,m3_w1"/>
+    <property name="WaypointOrientation" value="TwoDimensional"/>
+   </properties>
+  </object>
+  <object name="m3_w2" type="MoverSpawn" x="13728" y="3376">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="m3_w1" type="MoverSpawn" x="14528" y="3376">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="fan_1" type="EnvironmentActor" x="13328" y="3472">
+   <properties>
+    <property name="PositionCorrectionMode" value="Down"/>
+    <property name="SpriteKey" value="Fan"/>
+   </properties>
+  </object>
+  <object name="invincible_turret_5" type="EnemySpawn" x="12576" y="3232">
+   <properties>
+    <property name="EnemyOrientation" value="Up"/>
+    <property name="FireDelay" value="1000"/>
+    <property name="FireDuration" value="750"/>
+    <property name="Invincible" value="true"/>
+    <property name="ObjectType" value="SimpleTurret"/>
+    <property name="PositionCorrectionMode" value="Down"/>
+    <property name="Speed" value="0"/>
+    <property name="TurretBodySprite" value="StationaryTurretInvincibleUp"/>
+    <property name="TurretNozzleSprite" value="TurretInvincibleLaserNozzle"/>
+   </properties>
+  </object>
+  <object name="invincible_turret_6" type="EnemySpawn" x="14176" y="3232">
+   <properties>
+    <property name="EnemyOrientation" value="Up"/>
+    <property name="FireDelay" value="1000"/>
+    <property name="FireDuration" value="750"/>
+    <property name="Invincible" value="true"/>
+    <property name="ObjectType" value="SimpleTurret"/>
+    <property name="PositionCorrectionMode" value="Down"/>
+    <property name="Speed" value="0"/>
+    <property name="TurretBodySprite" value="StationaryTurretInvincibleUp"/>
+    <property name="TurretNozzleSprite" value="TurretInvincibleLaserNozzle"/>
+   </properties>
+  </object>
+  <object name="aerial_bomber_1" type="EnemySpawn" x="16512" y="2944">
+   <properties>
+    <property name="ObjectType" value="AerialBomber"/>
+   </properties>
+  </object>
+  <object name="aerial_bomber_2" type="EnemySpawn" x="16544" y="2944">
+   <properties>
+    <property name="ObjectType" value="AerialBomber"/>
+    <property name="SpawnDelay" value="1000"/>
+   </properties>
+  </object>
+  <object name="aerial_bomber_3" type="EnemySpawn" x="16736" y="2464">
+   <properties>
+    <property name="ObjectType" value="AerialBomber"/>
+   </properties>
+  </object>
+  <object name="aerial_bomber_4" type="EnemySpawn" x="16768" y="2464">
+   <properties>
+    <property name="ObjectType" value="AerialBomber"/>
+    <property name="SpawnDelay" value="1000"/>
+   </properties>
+  </object>
+  <object name="aerial_bomber_5" type="EnemySpawn" x="16736" y="1952">
+   <properties>
+    <property name="ObjectType" value="AerialBomber"/>
+   </properties>
+  </object>
+  <object name="aerial_bomber_6" type="EnemySpawn" x="16768" y="1952">
+   <properties>
+    <property name="ObjectType" value="AerialBomber"/>
+    <property name="SpawnDelay" value="1000"/>
+   </properties>
+  </object>
+  <object name="g4_w2" type="EnemySpawn" x="17696" y="800">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="grenadier_4" type="EnemySpawn" x="17632" y="768">
+   <properties>
+    <property name="Difficulty" value="Hard"/>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="PowerupPhysicsMode" value="Gravity"/>
+    <property name="PowerupType" value="Health"/>
+    <property name="WaypointList" value="g4_w1,g4_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="g4_w1" type="EnemySpawn" x="17568" y="800">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="g5_w2" type="EnemySpawn" x="18816" y="800">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="g5_w1" type="EnemySpawn" x="18688" y="800">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="grenadier_5" type="EnemySpawn" x="18752" y="768">
+   <properties>
+    <property name="Difficulty" value="Hard"/>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="WaypointList" value="g5_w1,g5_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="invincible_turret_7" type="EnemySpawn" x="18192" y="464">
+   <properties>
+    <property name="EnemyOrientation" value="Down"/>
+    <property name="FireDelay" value="1000"/>
+    <property name="FireDuration" value="1000"/>
+    <property name="Invincible" value="true"/>
+    <property name="ObjectType" value="SimpleTurret"/>
+    <property name="PositionCorrectionMode" value="Up"/>
+    <property name="Speed" value="0"/>
+    <property name="TurretBodySprite" value="StationaryTurretInvincibleDown"/>
+    <property name="TurretNozzleSprite" value="TurretInvincibleLaserNozzle"/>
+   </properties>
+  </object>
+  <object name="jetpack_powerup_1" type="PowerupSpawn" x="18192" y="592">
+   <properties>
+    <property name="ObjectType" value="Jetpack"/>
+   </properties>
+  </object>
+  <object name="m4_w1" type="MoverSpawn" x="18880" y="959">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="m4_w2" type="MoverSpawn" x="19520" y="960">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="mover_4" type="MoverSpawn" x="18944" y="992">
+   <properties>
+    <property name="Acceleration" value="0.5"/>
+    <property name="MaxVelocity" value="4"/>
+    <property name="MoverSpriteKey" value="Level3Mover"/>
+    <property name="ObjectType" value="SuspendedMover"/>
+    <property name="StopTime" value="1000"/>
+    <property name="WaypointIterator" value="ForwardAndBackward"/>
+    <property name="WaypointList" value="m4_w1,m4_w2"/>
+    <property name="WaypointOrientation" value="TwoDimensional"/>
+   </properties>
+  </object>
+  <object name="fan_3" type="EnvironmentActor" x="19984" y="1008">
+   <properties>
+    <property name="PositionCorrectionMode" value="Down"/>
+    <property name="SpriteKey" value="Fan"/>
+   </properties>
+  </object>
+  <object name="g6_w2" type="EnemySpawn" x="20048" y="896">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="grenadier_6" type="EnemySpawn" x="19984" y="863">
+   <properties>
+    <property name="Difficulty" value="Hard"/>
+    <property name="ObjectType" value="Grenadier"/>
+    <property name="WaypointList" value="g6_w1,g6_w2"/>
+    <property name="WaypointOrientation" value="Horizontal"/>
+   </properties>
+  </object>
+  <object name="g6_w1" type="EnemySpawn" x="19920" y="896">
+   <properties>
+    <property name="ObjectType" value="Waypoint"/>
+   </properties>
+  </object>
+  <object name="level_end_flag" type="EnvironmentActor" x="21024" y="192">
+   <properties>
+    <property name="PositionCorrectionMode" value="Down"/>
+    <property name="SpriteKey" value="LevelEndFlag"/>
+   </properties>
+  </object>
+  <object name="player_spawn" type="PlayerSpawn" x="256" y="4960"/>
+  <object name="checkpoint_spawn_2" type="CheckpointSpawn" x="15040" y="3296"/>
+  <object name="checkpoint_spawn_1" type="CheckpointSpawn" x="7200" y="3200"/>
+ </objectgroup>
+</map>
