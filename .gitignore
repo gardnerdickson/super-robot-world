@@ -3,5 +3,7 @@ RobotGame/RobotGame/bin/**
 RobotGame/RobotGame/obj/**
 RobotGame/RobotGameContent/bin/**
 RobotGame/RobotGameContent/obj/**
+*.csproj
+*.contentproj
 *.cachefile
 *.user
