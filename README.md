@@ -2,7 +2,7 @@
 
 2D platformer released on Xbox Live Indie Games on May 5th, 2013.
 
-## Project setup
+## Project Setup (Visual Studio)
 
 Resolve TiledLib reference:
 - Under the Windows project
