@@ -1,9 +1,8 @@
-SUPER ROBOT WORLD
-=================
+# Super Robot World
 
 2D platformer released on Xbox Live Indie Games on May 5th, 2013.
 
-**Project setup**
+## Project setup
 
 Resolve TiledLib reference:
 - Under the Windows project
