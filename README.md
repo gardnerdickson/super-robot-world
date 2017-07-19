@@ -18,3 +18,15 @@ Resolve TiledPipelineExtensions reference:
 	- Add ``TiledPipelineExtensions.dll`` from ``dependencies\TiledLib dll with Layer.LayerDepth\ContentPipeline`` folder.
 
 Add ``Preferences.xml`` file from ``dependencies`` folder to ``RobotGame\RobotGame\bin\x86\Release`` and ``RobotGame\RobotGame\bin\x86\Debug`` folder.
+
+## Releases
+
+### Release 1.2
+
+[Super Robot World v1.2](https://github.com/gardnerdickson/super-robot-world/releases/download/v1.2/SuperRobotWorld_v1.2.zip)
+
+#### Installation
+
+- Exract ``SuperRobotWorld_v1.2.zip``.
+- Run ``xnafx40_redist.msi`` to install XNA 4 runtime if it is not already installed.
+- Run ``SuperRobotWorld/RobotGame.exe`` to play.
