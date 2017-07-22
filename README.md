@@ -1,6 +1,6 @@
 # Super Robot World
 
-2D platformer released on Xbox Live Indie Games on May 5th, 2013.
+2D platformer released on Xbox Live Indie Games on May 6th, 2013.
 
 ## Project Setup (Visual Studio)
 
@@ -19,7 +19,11 @@ Resolve TiledPipelineExtensions reference:
 
 Add ``Preferences.xml`` file from ``dependencies`` folder to ``RobotGame\RobotGame\bin\x86\Release`` and ``RobotGame\RobotGame\bin\x86\Debug`` folder.
 
-## Releases
+## Links
+
+[Gameplay Trailer](https://youtu.be/3lDOSaMp0Z8)
+
+## PC Releases
 
 ### Release 1.2
 
