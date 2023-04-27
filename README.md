@@ -19,9 +19,9 @@ Resolve TiledPipelineExtensions reference:
 
 Add ``Preferences.xml`` file from ``dependencies`` folder to ``RobotGame\RobotGame\bin\x86\Release`` and ``RobotGame\RobotGame\bin\x86\Debug`` folder.
 
-## Links
+## Gameplay Trailer
 
-[Gameplay Trailer](https://youtu.be/3lDOSaMp0Z8)
+[![Gameplay Trailer](https://user-images.githubusercontent.com/7308112/234971023-86881f8d-db72-467e-ab79-dd10d6553c59.PNG)](https://www.youtube.com/watch?v=3lDOSaMp0Z8 "Gameplay Trailer")
 
 ## PC Releases
 
